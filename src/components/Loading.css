@@ -1,0 +1,178 @@
+/* ------------------- PLACEHOLDER STRIPES ------------------ */
+.placeholder {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.stripe {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  position: relative;
+}
+.stripe_sm {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  min-height: 1.5rem;
+  height: inherit;
+  position: relative;
+}
+.stripe_md {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  min-height: 3rem;
+  height: inherit;
+  position: relative;
+}
+.stripe_lg {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  min-height: 6rem;
+  height: inherit;
+  position: relative;
+}
+.stripe_xl {
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background: darkgray;
+  background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  min-height: 6rem;
+  height: inherit;
+  position: relative;
+}
+
+/* ------------------- BOOK CARD ------------------ */
+@media (max-width: 900px) {
+  .pld__books {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    background: #eee;
+  }
+  .pld__book-img {
+    width: 8rem;
+    max-width: 1000px;
+    margin: 1.5em;
+    min-height: 12rem;
+    border-radius: 3px;
+    transition: transform 1s;
+  }
+  .pld__descp {
+    width: 45%;
+    margin-top: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+@media (min-width: 900px) {
+  .pld__books {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #eee;
+  }
+  .pld__book-img {
+    width: 16rem;
+    height: 85%;
+    border-radius: 3px;
+    object-fit: cover;
+    object-position: center;
+    margin: 1.5em;
+  }
+  .pld__descp {
+    width: 45%;
+    margin-top: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+/* ------------------- NormalCardTwo ------------------ */
+.pld__card__img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 24rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.pld__card__info-hover {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+.pld__card__img--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 24rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+.pld__card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+.pld__card__info {
+  z-index: 2;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pld__card__img--hover {
+    height: 16rem;
+  }
+  .pld__card__img {
+    height: 16rem;
+  }
+}

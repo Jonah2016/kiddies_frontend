@@ -1,0 +1,73 @@
+.darksoul-search-bar {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    border-radius: 0% 30px 30px 30px;
+    transition: width 1s;
+    box-shadow: 5px 5px 20px #d8e6fd, -5px -5px 30px #f8f8f8;
+    position: relative;
+    /* top: 30%;
+    left: 0;
+    right: 0; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .search-icon {
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 5px;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  .darksoul-search-bar:hover {
+    width: 30rem;
+    border-radius: 0% 30px 30px 30px;
+  }
+  .darksoul-search-input {
+    margin: auto;
+    display: none;
+    transition: display 12s;
+    outline: none;
+    border: none;
+    font-family: 'Belanosima', sans-serif;
+    border-radius: 25px;
+    padding-left: 10px;
+  }
+  .darksoul-search-bar:hover .darksoul-search-input {
+    display: inline-flex;
+    width: 78%;
+    height: 70%;
+  }
+  input[type="submit"] {
+    display: none;
+  }
+  @media only screen and (max-width: 600px) {
+    .darksoul-search-bar:hover {
+      width: 20rem;
+      border-radius: 0% 30px 30px 15px;
+    }
+  }
+  
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgba(226, 247, 255, 0);
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #99beff;
+    border-radius: 10px;
+    height: 10px;
+    width: 3px;
+  }
+  ::selection {
+    background-color: #ffffff00;
+    color: #ffffff00;
+  }
+  

@@ -1,0 +1,110 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ 
+.single-form textarea,
+.single-form input {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+  transition-duration: 300ms;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #e2e8f0;
+  border-color: rgba(226, 232, 240, var(--border-opacity));
+  border-radius: 0.25rem;
+}
+
+.single-form textarea:focus,
+.single-form input:focus {
+  --border-opacity: 1;
+  border-color: #f3701d;
+  border-color: rgba(243, 110, 27, var(--border-opacity));
+  outline: 0;
+}
+
+.form-message.error {
+  --text-opacity: 1;
+  color: #f56565;
+  color: rgba(245, 101, 101, var(--text-opacity));
+}
+
+.form-message.success {
+  --text-opacity: 1;
+  color: #68d391;
+  color: rgba(104, 211, 145, var(--text-opacity));
+}
+
+.footer-social li a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  --text-opacity: 1;
+  color: #2d3748;
+  color: rgba(45, 55, 72, var(--text-opacity));
+  transition-duration: 300ms;
+}
+
+.footer-social li a:hover {
+  --text-opacity: 1;
+  color: #f3701d;
+  color: rgba(243, 110, 27, var(--text-opacity));
+}
+
+.footer-title {
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  --text-opacity: 1;
+  color: #4a5568;
+  color: rgba(74, 85, 104, var(--text-opacity));
+}
+
+.footer-link ul li a {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  --text-opacity: 1;
+  color: #1a202c;
+  color: rgba(26, 32, 44, var(--text-opacity));
+  transition-duration: 300ms;
+}
+
+.footer-link ul li a:hover {
+  --text-opacity: 1;
+  color: #f3701d;
+  color: rgba(243, 110, 27, var(--text-opacity));
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  transition-duration: 300ms;
+  --bg-opacity: 1;
+  background-color: #f3701d;
+  background-color: rgba(243, 110, 27, var(--bg-opacity));
+  border-radius: 0.25rem;
+}
+
+ 
+ 
