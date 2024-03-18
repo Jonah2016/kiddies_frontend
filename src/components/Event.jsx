@@ -7,7 +7,7 @@ function Events({ limit }) {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_EVENT_URL)
+    fetch(process.env.REACT_APP_EVENT_API_URL)
       .then((response) => response.json())
       .then((data) => {
         setEvents(data);
@@ -25,6 +25,7 @@ function Events({ limit }) {
             <NormalCard
               key={item._id}
               data={{
+                id: item._id,
                 title: item.name,
                 image: item.image,
                 briefing: item.description,

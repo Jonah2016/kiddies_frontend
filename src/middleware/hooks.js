@@ -20,7 +20,7 @@ function useFetchData(url) {
       } finally {
         setTimeout(() => {
           setLoading(false);
-        }, 800); // Set timeout before setting loading to false
+        }, 500); // Set timeout before setting loading to false
       }
     };
 

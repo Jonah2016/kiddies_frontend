@@ -7,6 +7,8 @@ import "./NormalCardTwo.css";
 import { Link } from "react-router-dom";
 import RatingStars from "./RatingStars";
 
+const baseUrl = process.env.REACT_APP_BASE_URL + "events/";
+
 function NormalCardTwo({ data }) {
   return (
     <>
@@ -27,7 +29,7 @@ function NormalCardTwo({ data }) {
             </div>
           </div>
           <div className="card__img" />
-          <Link to="#" className="card_link">
+          <Link to={`${baseUrl}${data.id}`} className="card_link">
             <div
               className="card__img--hover"
               style={{
@@ -56,7 +58,11 @@ function NormalCardTwo({ data }) {
             )}
             <span className="card__by">
               Hosted by{" "}
-              <Link to="#" className="card__author font-bold" title="author">
+              <Link
+                to={`${baseUrl}${data.id}`}
+                className="card__author font-bold"
+                title="author"
+              >
                 {data.host}
               </Link>
             </span>

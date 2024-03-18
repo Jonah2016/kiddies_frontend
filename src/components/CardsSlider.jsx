@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styles from "../assets/css/custom.module.css";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
+const baseUrl = process.env.REACT_APP_BASE_URL + "library/";
+
 function CardsSlider(props) {
   const { data, containerHeight, slide, slideImage, options } = props;
 
@@ -40,7 +42,7 @@ function CardsSlider(props) {
                   className={`mb-3 text-xl h-auto md:h-12 font-medium leading-tight text-[${slide.titleColor}] dark:text-[${slide.titleColor}] `}
                 >
                   <Link
-                    to={"/"}
+                    to={`${baseUrl}${item._id}`}
                     className={`hover:underline hover:underline-offset-3 font-bold ${styles.clamp__2} text-[${slide.titleColor}] `}
                   >
                     {item.title}
@@ -63,7 +65,7 @@ function CardsSlider(props) {
               )}
               {options.button && (
                 <Link
-                  to={"/"}
+                  to={`${baseUrl}${item._id}`}
                   className={`pt-2 font-medium text-[1.15rem] flex items-center hover:underline hover:underline-offset-3 text-[${slide.btnColor}]`}
                 >
                   Read more

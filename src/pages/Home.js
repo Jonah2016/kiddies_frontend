@@ -52,13 +52,13 @@ const heroImg =
 
 function Home() {
   const { data: aboutData, loading: aboutLoading } = useFetchData(
-    process.env.REACT_APP_ABOUT_URL
+    process.env.REACT_APP_ABOUT_API_URL
   );
   const { data: bookData, loading: bookLoading } = useFetchData(
-    process.env.REACT_APP_CATALOG_URL
+    process.env.REACT_APP_CATALOG_API_URL
   );
   const { data: eventData, loading: eventLoading } = useFetchData(
-    process.env.REACT_APP_EVENT_URL
+    process.env.REACT_APP_EVENT_API_URL
   );
 
   return (

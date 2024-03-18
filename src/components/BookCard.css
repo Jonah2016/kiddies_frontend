@@ -60,7 +60,7 @@
       letter-spacing: 1px;
       color: white;
     }
-    .descp button {
+    .descp .book_button {
       margin-top: 1em;
       background: none;
       border: none;
@@ -71,7 +71,7 @@
       border-radius: 20px;
       font-weight: bolder;
     }
-    .descp button:hover {
+    .descp .book_button:hover {
       color: #a790f2;
     }
     #b1 {
@@ -157,7 +157,7 @@
       letter-spacing: 1px;
       color: white;
     }
-    .descp button {
+    .descp .book_button {
       margin-top: 1em;
       background: none;
       border: none;
@@ -168,7 +168,7 @@
       border-radius: 20px;
       font-weight: bolder;
     }
-    .descp button:hover {
+    .descp .book_button:hover {
       color: #a790f2;
     }
     #b1 {

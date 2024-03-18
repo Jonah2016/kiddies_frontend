@@ -7,7 +7,7 @@ function Footer() {
   const [service, setService] = useState({});
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_SERVICE_URL)
+    fetch(process.env.REACT_APP_SERVICE_API_URL)
       .then((response) => response.json())
       .then((data) => {
         setService(data);

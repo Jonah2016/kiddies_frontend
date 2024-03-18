@@ -52,7 +52,7 @@ function renderService(services) {
 }
 
 function Services() {
-  const { data, loading } = useFetchData(process.env.REACT_APP_SERVICE_URL);
+  const { data, loading } = useFetchData(process.env.REACT_APP_SERVICE_API_URL);
 
   return (
     <main className="md:m-6 m-auto max-w-[1280px]">

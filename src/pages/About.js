@@ -98,7 +98,7 @@ const valuesData = [
 
 function About() {
   const { data: aboutData, loading } = useFetchData(
-    process.env.REACT_APP_ABOUT_URL
+    process.env.REACT_APP_ABOUT_API_URL
   );
 
   const heroProperties = {

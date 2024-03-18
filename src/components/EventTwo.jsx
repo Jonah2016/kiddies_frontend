@@ -8,7 +8,7 @@ const { LOAD_3 } = require("../constants/index.js");
 
 function EventTwo({ limit }) {
   const { data: eventData, loading: eventLoading } = useFetchData(
-    process.env.REACT_APP_EVENT_URL
+    process.env.REACT_APP_EVENT_API_URL
   );
 
   return (
@@ -23,6 +23,7 @@ function EventTwo({ limit }) {
               <NormalCardTwo
                 key={item._id}
                 data={{
+                  id: item._id,
                   title: item.name,
                   image: item.image,
                   description: item.description,

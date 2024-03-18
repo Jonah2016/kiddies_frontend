@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import HeaderHeroShort from "../components/HeaderHeroShort";
-import Footer from "../components/Footer";
-import RegisterBanner from "../components/RegisterBanner";
-import EventTwo from "../components/EventTwo";
-import CardsSlider from "../components/CardsSlider";
-import Title from "../components/Title";
-import styles from "../assets/css/custom.module.css";
-import { COLORS } from "../assets/theme/theme";
-import useFetchData from "../middleware/hooks";
-import Loading from "../components/Loading";
+import Navbar from "../../components/Navbar.jsx";
+import HeaderHeroShort from "../../components/HeaderHeroShort.jsx";
+import Footer from "../../components/Footer.jsx";
+import RegisterBanner from "../../components/RegisterBanner.jsx";
+import EventTwo from "../../components/EventTwo.jsx";
+import CardsSlider from "../../components/CardsSlider.jsx";
+import Title from "../../components/Title.jsx";
+import styles from "../../assets/css/custom.module.css";
+import { COLORS } from "../../assets/theme/theme.js";
+import useFetchData from "../../middleware/hooks.js";
+import Loading from "../../components/Loading.jsx";
 
-const { LOAD_7 } = require("../constants/index.js");
+const { LOAD_7 } = require("../../constants/index.js");
 
 const heroProperties = {
   banner:
@@ -31,7 +31,7 @@ const heroProperties = {
 
 function Events() {
   const { data: bookData, loading: bookLoading } = useFetchData(
-    process.env.REACT_APP_CATALOG_URL
+    process.env.REACT_APP_CATALOG_API_URL
   );
 
   return (
